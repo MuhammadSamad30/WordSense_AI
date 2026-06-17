@@ -1,0 +1,1514 @@
+[
+  {
+    "word": "Ability",
+    "meaning": "صلاحیت",
+    "example_en": "She has the ability to solve problems quickly.",
+    "example_ur": "اس کے پاس مسائل جلد حل کرنے کی صلاحیت ہے۔"
+  },
+  {
+    "word": "Accuracy",
+    "meaning": "درستگی",
+    "example_en": "Accuracy is important in trading.",
+    "example_ur": "ٹریڈنگ میں درستگی اہم ہوتی ہے۔"
+  },
+  {
+    "word": "Achievement",
+    "meaning": "کامیابی",
+    "example_en": "Winning the award was a great achievement.",
+    "example_ur": "ایوارڈ جیتنا ایک بڑی کامیابی تھی۔"
+  },
+  {
+    "word": "Adaptability",
+    "meaning": "موافقت کی صلاحیت",
+    "example_en": "Adaptability helps people succeed.",
+    "example_ur": "موافقت کی صلاحیت لوگوں کو کامیاب بناتی ہے۔"
+  },
+  {
+    "word": "Advantage",
+    "meaning": "فائدہ",
+    "example_en": "Experience gives you an advantage.",
+    "example_ur": "تجربہ آپ کو فائدہ دیتا ہے۔"
+  },
+  {
+    "word": "Ambition",
+    "meaning": "بلند حوصلہ",
+    "example_en": "His ambition is to become a leader.",
+    "example_ur": "اس کی خواہش ایک رہنما بننا ہے۔"
+  },
+  {
+    "word": "Analysis",
+    "meaning": "تجزیہ",
+    "example_en": "Good analysis improves decisions.",
+    "example_ur": "اچھا تجزیہ فیصلوں کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Appreciation",
+    "meaning": "قدردانی",
+    "example_en": "She showed appreciation for the help.",
+    "example_ur": "اس نے مدد کی قدردانی کی۔"
+  },
+  {
+    "word": "Awareness",
+    "meaning": "آگاہی",
+    "example_en": "Awareness reduces mistakes.",
+    "example_ur": "آگاہی غلطیوں کو کم کرتی ہے۔"
+  },
+  {
+    "word": "Balance",
+    "meaning": "توازن",
+    "example_en": "Work-life balance is important.",
+    "example_ur": "کام اور زندگی کا توازن اہم ہے۔"
+  },
+  {
+    "word": "Benefit",
+    "meaning": "فائدہ",
+    "example_en": "Exercise provides many benefits.",
+    "example_ur": "ورزش بہت سے فوائد فراہم کرتی ہے۔"
+  },
+  {
+    "word": "Bravery",
+    "meaning": "بہادری",
+    "example_en": "Bravery helps during difficult times.",
+    "example_ur": "بہادری مشکل وقت میں مدد کرتی ہے۔"
+  },
+  {
+    "word": "Capability",
+    "meaning": "قابلیت",
+    "example_en": "She proved her capability.",
+    "example_ur": "اس نے اپنی قابلیت ثابت کی۔"
+  },
+  {
+    "word": "Challenge",
+    "meaning": "چیلنج",
+    "example_en": "Every challenge teaches something new.",
+    "example_ur": "ہر چیلنج کچھ نیا سکھاتا ہے۔"
+  },
+  {
+    "word": "Clarity",
+    "meaning": "وضاحت",
+    "example_en": "Clarity improves communication.",
+    "example_ur": "وضاحت رابطے کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Collaboration",
+    "meaning": "باہمی تعاون",
+    "example_en": "Collaboration leads to better results.",
+    "example_ur": "باہمی تعاون بہتر نتائج لاتا ہے۔"
+  },
+  {
+    "word": "Commitment",
+    "meaning": "وابستگی",
+    "example_en": "Commitment is necessary for success.",
+    "example_ur": "کامیابی کے لیے وابستگی ضروری ہے۔"
+  },
+  {
+    "word": "Communication",
+    "meaning": "رابطہ",
+    "example_en": "Communication builds trust.",
+    "example_ur": "رابطہ اعتماد پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Compassion",
+    "meaning": "ہمدردی",
+    "example_en": "Compassion makes people kinder.",
+    "example_ur": "ہمدردی لوگوں کو مہربان بناتی ہے۔"
+  },
+  {
+    "word": "Confidence",
+    "meaning": "اعتماد",
+    "example_en": "Confidence improves performance.",
+    "example_ur": "اعتماد کارکردگی کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Consistency",
+    "meaning": "مستقل مزاجی",
+    "example_en": "Consistency produces long-term results.",
+    "example_ur": "مستقل مزاجی طویل مدتی نتائج دیتی ہے۔"
+  },
+  {
+    "word": "Cooperation",
+    "meaning": "تعاون",
+    "example_en": "Cooperation strengthens teams.",
+    "example_ur": "تعاون ٹیموں کو مضبوط بناتا ہے۔"
+  },
+  {
+    "word": "Creativity",
+    "meaning": "تخلیقی صلاحیت",
+    "example_en": "Creativity helps solve problems.",
+    "example_ur": "تخلیقی صلاحیت مسائل حل کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Credibility",
+    "meaning": "اعتبار",
+    "example_en": "Credibility takes years to build.",
+    "example_ur": "اعتبار بنانے میں سال لگتے ہیں۔"
+  },
+  {
+    "word": "Curiosity",
+    "meaning": "تجسس",
+    "example_en": "Curiosity encourages learning.",
+    "example_ur": "تجسس سیکھنے کی حوصلہ افزائی کرتا ہے۔"
+  },
+  {
+    "word": "Dedication",
+    "meaning": "لگن",
+    "example_en": "Dedication leads to excellence.",
+    "example_ur": "لگن اعلیٰ کارکردگی تک پہنچاتی ہے۔"
+  },
+  {
+    "word": "Decision",
+    "meaning": "فیصلہ",
+    "example_en": "A quick decision saved time.",
+    "example_ur": "ایک فوری فیصلے نے وقت بچایا۔"
+  },
+  {
+    "word": "Determination",
+    "meaning": "عزم",
+    "example_en": "Determination helps overcome obstacles.",
+    "example_ur": "عزم رکاوٹوں پر قابو پانے میں مدد دیتا ہے۔"
+  },
+  {
+    "word": "Development",
+    "meaning": "ترقی",
+    "example_en": "Development requires effort.",
+    "example_ur": "ترقی کے لیے محنت درکار ہوتی ہے۔"
+  },
+  {
+    "word": "Discipline",
+    "meaning": "نظم و ضبط",
+    "example_en": "Discipline creates success.",
+    "example_ur": "نظم و ضبط کامیابی پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Efficiency",
+    "meaning": "کارکردگی",
+    "example_en": "Efficiency saves resources.",
+    "example_ur": "کارکردگی وسائل بچاتی ہے۔"
+  },
+  {
+    "word": "Empathy",
+    "meaning": "ہمدردی",
+    "example_en": "Empathy improves relationships.",
+    "example_ur": "ہمدردی تعلقات کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Encouragement",
+    "meaning": "حوصلہ افزائی",
+    "example_en": "Encouragement boosts confidence.",
+    "example_ur": "حوصلہ افزائی اعتماد بڑھاتی ہے۔"
+  },
+  {
+    "word": "Endurance",
+    "meaning": "برداشت",
+    "example_en": "Endurance is important in sports.",
+    "example_ur": "کھیلوں میں برداشت اہم ہوتی ہے۔"
+  },
+  {
+    "word": "Enthusiasm",
+    "meaning": "جوش",
+    "example_en": "Enthusiasm inspires others.",
+    "example_ur": "جوش دوسروں کو متاثر کرتا ہے۔"
+  },
+  {
+    "word": "Ethics",
+    "meaning": "اخلاقیات",
+    "example_en": "Ethics guide professional behavior.",
+    "example_ur": "اخلاقیات پیشہ ورانہ رویے کی رہنمائی کرتی ہیں۔"
+  },
+  {
+    "word": "Excellence",
+    "meaning": "اعلیٰ معیار",
+    "example_en": "Excellence requires effort.",
+    "example_ur": "اعلیٰ معیار کے لیے محنت درکار ہوتی ہے۔"
+  },
+  {
+    "word": "Experience",
+    "meaning": "تجربہ",
+    "example_en": "Experience improves judgment.",
+    "example_ur": "تجربہ فیصلہ سازی کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Expertise",
+    "meaning": "مہارت",
+    "example_en": "His expertise helped the team.",
+    "example_ur": "اس کی مہارت نے ٹیم کی مدد کی۔"
+  },
+  {
+    "word": "Flexibility",
+    "meaning": "لچک",
+    "example_en": "Flexibility helps in changing situations.",
+    "example_ur": "لچک بدلتی صورتحال میں مدد کرتی ہے۔"
+  },
+  {
+    "word": "Focus",
+    "meaning": "توجہ",
+    "example_en": "Focus increases productivity.",
+    "example_ur": "توجہ پیداواری صلاحیت بڑھاتی ہے۔"
+  },
+  {
+    "word": "Forgiveness",
+    "meaning": "معافی",
+    "example_en": "Forgiveness brings peace.",
+    "example_ur": "معافی سکون لاتی ہے۔"
+  },
+  {
+    "word": "Freedom",
+    "meaning": "آزادی",
+    "example_en": "Freedom allows creativity.",
+    "example_ur": "آزادی تخلیقی صلاحیت کو فروغ دیتی ہے۔"
+  },
+  {
+    "word": "Generosity",
+    "meaning": "سخاوت",
+    "example_en": "Generosity earns respect.",
+    "example_ur": "سخاوت عزت دلاتی ہے۔"
+  },
+  {
+    "word": "Goal",
+    "meaning": "مقصد",
+    "example_en": "A clear goal improves focus.",
+    "example_ur": "واضح مقصد توجہ بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Growth",
+    "meaning": "ترقی",
+    "example_en": "Growth comes through learning.",
+    "example_ur": "ترقی سیکھنے کے ذریعے آتی ہے۔"
+  },
+  {
+    "word": "Guidance",
+    "meaning": "رہنمائی",
+    "example_en": "Good guidance saves time.",
+    "example_ur": "اچھی رہنمائی وقت بچاتی ہے۔"
+  },
+  {
+    "word": "Honesty",
+    "meaning": "ایمانداری",
+    "example_en": "Honesty builds trust.",
+    "example_ur": "ایمانداری اعتماد پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Humility",
+    "meaning": "انکساری",
+    "example_en": "Humility is a respected quality.",
+    "example_ur": "انکساری ایک قابل احترام خوبی ہے۔"
+  },
+  {
+    "word": "Improvement",
+    "meaning": "بہتری",
+    "example_en": "Improvement takes time.",
+    "example_ur": "بہتری میں وقت لگتا ہے۔"
+  },
+  {
+    "word": "Independence",
+    "meaning": "خودمختاری",
+    "example_en": "Independence increases confidence.",
+    "example_ur": "خودمختاری اعتماد بڑھاتی ہے۔"
+  },
+  {
+    "word": "Influence",
+    "meaning": "اثر و رسوخ",
+    "example_en": "His influence helped the project succeed.",
+    "example_ur": "اس کے اثر و رسوخ نے منصوبے کو کامیاب بنانے میں مدد کی۔"
+  },
+  {
+    "word": "Initiative",
+    "meaning": "پہل",
+    "example_en": "She took the initiative to solve the issue.",
+    "example_ur": "اس نے مسئلہ حل کرنے کے لیے پہل کی۔"
+  },
+  {
+    "word": "Innovation",
+    "meaning": "جدت",
+    "example_en": "Innovation drives business growth.",
+    "example_ur": "جدت کاروباری ترقی کو آگے بڑھاتی ہے۔"
+  },
+  {
+    "word": "Insight",
+    "meaning": "گہری سمجھ",
+    "example_en": "His insight improved the strategy.",
+    "example_ur": "اس کی گہری سمجھ نے حکمت عملی بہتر بنائی۔"
+  },
+  {
+    "word": "Inspiration",
+    "meaning": "ترغیب",
+    "example_en": "Her story is an inspiration to many.",
+    "example_ur": "اس کی کہانی بہت سے لوگوں کے لیے ترغیب ہے۔"
+  },
+  {
+    "word": "Integrity",
+    "meaning": "دیانت داری",
+    "example_en": "Integrity is essential in leadership.",
+    "example_ur": "قیادت میں دیانت داری ضروری ہے۔"
+  },
+  {
+    "word": "Intelligence",
+    "meaning": "ذہانت",
+    "example_en": "Intelligence helps in solving complex problems.",
+    "example_ur": "ذہانت پیچیدہ مسائل حل کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Interest",
+    "meaning": "دلچسپی",
+    "example_en": "He showed interest in technology.",
+    "example_ur": "اس نے ٹیکنالوجی میں دلچسپی ظاہر کی۔"
+  },
+  {
+    "word": "Judgment",
+    "meaning": "فیصلہ سازی",
+    "example_en": "Good judgment prevents mistakes.",
+    "example_ur": "اچھی فیصلہ سازی غلطیوں سے بچاتی ہے۔"
+  },
+  {
+    "word": "Justice",
+    "meaning": "انصاف",
+    "example_en": "Justice is important in every society.",
+    "example_ur": "ہر معاشرے میں انصاف اہم ہے۔"
+  },
+  {
+    "word": "Knowledge",
+    "meaning": "علم",
+    "example_en": "Knowledge increases confidence.",
+    "example_ur": "علم اعتماد میں اضافہ کرتا ہے۔"
+  },
+  {
+    "word": "Leadership",
+    "meaning": "قیادت",
+    "example_en": "Leadership requires responsibility.",
+    "example_ur": "قیادت کے لیے ذمہ داری ضروری ہے۔"
+  },
+  {
+    "word": "Learning",
+    "meaning": "سیکھنا",
+    "example_en": "Learning is a lifelong process.",
+    "example_ur": "سیکھنا زندگی بھر کا عمل ہے۔"
+  },
+  {
+    "word": "Legacy",
+    "meaning": "ورثہ",
+    "example_en": "He left a strong legacy behind.",
+    "example_ur": "وہ اپنے پیچھے مضبوط ورثہ چھوڑ گیا۔"
+  },
+  {
+    "word": "Logic",
+    "meaning": "منطق",
+    "example_en": "Logic helps in making better decisions.",
+    "example_ur": "منطق بہتر فیصلے کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Loyalty",
+    "meaning": "وفاداری",
+    "example_en": "Loyalty strengthens relationships.",
+    "example_ur": "وفاداری تعلقات کو مضبوط بناتی ہے۔"
+  },
+  {
+    "word": "Management",
+    "meaning": "انتظام",
+    "example_en": "Effective management improves results.",
+    "example_ur": "موثر انتظام نتائج کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Mastery",
+    "meaning": "کامل مہارت",
+    "example_en": "Mastery requires years of practice.",
+    "example_ur": "کامل مہارت کے لیے سالوں کی مشق درکار ہوتی ہے۔"
+  },
+  {
+    "word": "Maturity",
+    "meaning": "پختگی",
+    "example_en": "Maturity improves communication.",
+    "example_ur": "پختگی رابطے کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Mindset",
+    "meaning": "سوچ",
+    "example_en": "A positive mindset attracts opportunities.",
+    "example_ur": "مثبت سوچ مواقع کو اپنی طرف کھینچتی ہے۔"
+  },
+  {
+    "word": "Mission",
+    "meaning": "مشن",
+    "example_en": "The company has a clear mission.",
+    "example_ur": "کمپنی کا ایک واضح مشن ہے۔"
+  },
+  {
+    "word": "Motivation",
+    "meaning": "حوصلہ افزائی",
+    "example_en": "Motivation helps achieve goals.",
+    "example_ur": "حوصلہ افزائی مقاصد حاصل کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Negotiation",
+    "meaning": "مذاکرات",
+    "example_en": "Negotiation resolved the conflict.",
+    "example_ur": "مذاکرات نے تنازع حل کر دیا۔"
+  },
+  {
+    "word": "Networking",
+    "meaning": "تعلقات سازی",
+    "example_en": "Networking creates new opportunities.",
+    "example_ur": "تعلقات سازی نئے مواقع پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Objective",
+    "meaning": "مقصد",
+    "example_en": "The objective was achieved successfully.",
+    "example_ur": "مقصد کامیابی سے حاصل کر لیا گیا۔"
+  },
+  {
+    "word": "Observation",
+    "meaning": "مشاہدہ",
+    "example_en": "Observation helps identify patterns.",
+    "example_ur": "مشاہدہ نمونوں کی شناخت میں مدد دیتا ہے۔"
+  },
+  {
+    "word": "Opportunity",
+    "meaning": "موقع",
+    "example_en": "This opportunity can change your future.",
+    "example_ur": "یہ موقع آپ کا مستقبل بدل سکتا ہے۔"
+  },
+  {
+    "word": "Optimism",
+    "meaning": "امید پسندی",
+    "example_en": "Optimism helps during challenges.",
+    "example_ur": "امید پسندی چیلنجز کے دوران مدد کرتی ہے۔"
+  },
+  {
+    "word": "Organization",
+    "meaning": "تنظیم",
+    "example_en": "Organization improves productivity.",
+    "example_ur": "تنظیم پیداواری صلاحیت بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Ownership",
+    "meaning": "ذمہ داری قبول کرنا",
+    "example_en": "Ownership leads to accountability.",
+    "example_ur": "ذمہ داری قبول کرنا جوابدہی پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Passion",
+    "meaning": "جذبہ",
+    "example_en": "Passion drives success.",
+    "example_ur": "جذبہ کامیابی کی طرف لے جاتا ہے۔"
+  },
+  {
+    "word": "Patience",
+    "meaning": "صبر",
+    "example_en": "Patience is important for growth.",
+    "example_ur": "ترقی کے لیے صبر اہم ہے۔"
+  },
+  {
+    "word": "Performance",
+    "meaning": "کارکردگی",
+    "example_en": "Training improved his performance.",
+    "example_ur": "تربیت نے اس کی کارکردگی بہتر بنائی۔"
+  },
+  {
+    "word": "Persistence",
+    "meaning": "استقامت",
+    "example_en": "Persistence helps overcome difficulties.",
+    "example_ur": "استقامت مشکلات پر قابو پانے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Perspective",
+    "meaning": "نقطۂ نظر",
+    "example_en": "Everyone has a different perspective.",
+    "example_ur": "ہر شخص کا نقطۂ نظر مختلف ہوتا ہے۔"
+  },
+  {
+    "word": "Planning",
+    "meaning": "منصوبہ بندی",
+    "example_en": "Planning reduces uncertainty.",
+    "example_ur": "منصوبہ بندی غیر یقینی صورتحال کم کرتی ہے۔"
+  },
+  {
+    "word": "Potential",
+    "meaning": "صلاحیت",
+    "example_en": "She has great potential.",
+    "example_ur": "اس میں بہت صلاحیت ہے۔"
+  },
+  {
+    "word": "Practicality",
+    "meaning": "عملیت پسندی",
+    "example_en": "Practicality improves decision making.",
+    "example_ur": "عملیت پسندی فیصلہ سازی بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Precision",
+    "meaning": "درست پیمائش",
+    "example_en": "Precision is important in engineering.",
+    "example_ur": "انجینئرنگ میں درست پیمائش اہم ہے۔"
+  },
+  {
+    "word": "Preparation",
+    "meaning": "تیاری",
+    "example_en": "Preparation increases confidence.",
+    "example_ur": "تیاری اعتماد بڑھاتی ہے۔"
+  },
+  {
+    "word": "Priority",
+    "meaning": "ترجیح",
+    "example_en": "Safety is our top priority.",
+    "example_ur": "حفاظت ہماری اولین ترجیح ہے۔"
+  },
+  {
+    "word": "Productivity",
+    "meaning": "پیداواری صلاحیت",
+    "example_en": "Focus improves productivity.",
+    "example_ur": "توجہ پیداواری صلاحیت بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Professionalism",
+    "meaning": "پیشہ ورانہ رویہ",
+    "example_en": "Professionalism builds trust.",
+    "example_ur": "پیشہ ورانہ رویہ اعتماد پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Progress",
+    "meaning": "ترقی",
+    "example_en": "Progress takes consistent effort.",
+    "example_ur": "ترقی کے لیے مسلسل کوشش درکار ہوتی ہے۔"
+  },
+  {
+    "word": "Prosperity",
+    "meaning": "خوشحالی",
+    "example_en": "Prosperity comes with hard work.",
+    "example_ur": "خوشحالی محنت سے آتی ہے۔"
+  },
+  {
+    "word": "Purpose",
+    "meaning": "مقصد",
+    "example_en": "A clear purpose gives direction.",
+    "example_ur": "واضح مقصد سمت فراہم کرتا ہے۔"
+  },
+  {
+    "word": "Quality",
+    "meaning": "معیار",
+    "example_en": "Quality attracts customers.",
+    "example_ur": "معیار گاہکوں کو متوجہ کرتا ہے۔"
+  },
+  {
+    "word": "Recognition",
+    "meaning": "پہچان",
+    "example_en": "His work earned recognition.",
+    "example_ur": "اس کے کام نے اسے پہچان دلائی۔"
+  },
+  {
+    "word": "Reliability",
+    "meaning": "بھروسہ مندی",
+    "example_en": "Reliability is valued in teams.",
+    "example_ur": "ٹیموں میں بھروسہ مندی کو اہمیت دی جاتی ہے۔"
+  },
+  {
+    "word": "Reputation",
+    "meaning": "شہرت",
+    "example_en": "A good reputation takes time to build.",
+    "example_ur": "اچھی شہرت بنانے میں وقت لگتا ہے۔"
+  },
+  {
+    "word": "Resilience",
+    "meaning": "دوبارہ سنبھلنے کی صلاحیت",
+    "example_en": "Resilience helps people recover from setbacks.",
+    "example_ur": "دوبارہ سنبھلنے کی صلاحیت لوگوں کو ناکامیوں سے نکلنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Resourcefulness",
+    "meaning": "وسائل کو مؤثر استعمال کرنے کی صلاحیت",
+    "example_en": "Resourcefulness helps solve unexpected problems.",
+    "example_ur": "وسائل کو مؤثر استعمال کرنے کی صلاحیت غیر متوقع مسائل حل کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Respect",
+    "meaning": "احترام",
+    "example_en": "Respect strengthens relationships.",
+    "example_ur": "احترام تعلقات کو مضبوط بناتا ہے۔"
+  },
+  {
+    "word": "Responsibility",
+    "meaning": "ذمہ داری",
+    "example_en": "Responsibility builds character.",
+    "example_ur": "ذمہ داری کردار کو مضبوط بناتی ہے۔"
+  },
+  {
+    "word": "Result",
+    "meaning": "نتیجہ",
+    "example_en": "Hard work produces good results.",
+    "example_ur": "محنت اچھے نتائج پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Risk",
+    "meaning": "خطرہ",
+    "example_en": "Every investment carries some risk.",
+    "example_ur": "ہر سرمایہ کاری میں کچھ نہ کچھ خطرہ ہوتا ہے۔"
+  },
+  {
+    "word": "Security",
+    "meaning": "تحفظ",
+    "example_en": "Security is important for every business.",
+    "example_ur": "ہر کاروبار کے لیے تحفظ اہم ہے۔"
+  },
+  {
+    "word": "Self-awareness",
+    "meaning": "خود آگاہی",
+    "example_en": "Self-awareness improves decision making.",
+    "example_ur": "خود آگاہی فیصلہ سازی کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Self-confidence",
+    "meaning": "خود اعتمادی",
+    "example_en": "Self-confidence helps in interviews.",
+    "example_ur": "خود اعتمادی انٹرویوز میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Self-control",
+    "meaning": "خود پر قابو",
+    "example_en": "Self-control prevents emotional decisions.",
+    "example_ur": "خود پر قابو جذباتی فیصلوں سے بچاتا ہے۔"
+  },
+  {
+    "word": "Self-discipline",
+    "meaning": "ذاتی نظم و ضبط",
+    "example_en": "Self-discipline is the key to success.",
+    "example_ur": "ذاتی نظم و ضبط کامیابی کی کنجی ہے۔"
+  },
+  {
+    "word": "Sensitivity",
+    "meaning": "حساسیت",
+    "example_en": "Sensitivity helps understand others.",
+    "example_ur": "حساسیت دوسروں کو سمجھنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Sincerity",
+    "meaning": "اخلاص",
+    "example_en": "Sincerity earns trust.",
+    "example_ur": "اخلاص اعتماد حاصل کرتا ہے۔"
+  },
+  {
+    "word": "Skill",
+    "meaning": "مہارت",
+    "example_en": "Communication is an important skill.",
+    "example_ur": "رابطہ ایک اہم مہارت ہے۔"
+  },
+  {
+    "word": "Solution",
+    "meaning": "حل",
+    "example_en": "The team found a practical solution.",
+    "example_ur": "ٹیم نے ایک عملی حل تلاش کیا۔"
+  },
+  {
+    "word": "Stability",
+    "meaning": "استحکام",
+    "example_en": "Financial stability reduces stress.",
+    "example_ur": "مالی استحکام ذہنی دباؤ کم کرتا ہے۔"
+  },
+  {
+    "word": "Standard",
+    "meaning": "معیار",
+    "example_en": "The company maintains high standards.",
+    "example_ur": "کمپنی اعلیٰ معیار برقرار رکھتی ہے۔"
+  },
+  {
+    "word": "Strategy",
+    "meaning": "حکمت عملی",
+    "example_en": "A good strategy increases success.",
+    "example_ur": "اچھی حکمت عملی کامیابی بڑھاتی ہے۔"
+  },
+  {
+    "word": "Strength",
+    "meaning": "طاقت",
+    "example_en": "Patience is a strength.",
+    "example_ur": "صبر ایک طاقت ہے۔"
+  },
+  {
+    "word": "Success",
+    "meaning": "کامیابی",
+    "example_en": "Success requires consistency.",
+    "example_ur": "کامیابی کے لیے مستقل مزاجی ضروری ہے۔"
+  },
+  {
+    "word": "Support",
+    "meaning": "مدد",
+    "example_en": "Family support is valuable.",
+    "example_ur": "خاندانی مدد قیمتی ہوتی ہے۔"
+  },
+  {
+    "word": "Sustainability",
+    "meaning": "پائیداری",
+    "example_en": "Sustainability is important for long-term growth.",
+    "example_ur": "طویل مدتی ترقی کے لیے پائیداری اہم ہے۔"
+  },
+  {
+    "word": "Synergy",
+    "meaning": "مشترکہ طاقت",
+    "example_en": "Synergy improves team performance.",
+    "example_ur": "مشترکہ طاقت ٹیم کی کارکردگی بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Talent",
+    "meaning": "صلاحیت",
+    "example_en": "Her talent impressed everyone.",
+    "example_ur": "اس کی صلاحیت نے سب کو متاثر کیا۔"
+  },
+  {
+    "word": "Teamwork",
+    "meaning": "ٹیم ورک",
+    "example_en": "Teamwork leads to better results.",
+    "example_ur": "ٹیم ورک بہتر نتائج کی طرف لے جاتا ہے۔"
+  },
+  {
+    "word": "Technology",
+    "meaning": "ٹیکنالوجی",
+    "example_en": "Technology changes rapidly.",
+    "example_ur": "ٹیکنالوجی تیزی سے بدلتی ہے۔"
+  },
+  {
+    "word": "Thoroughness",
+    "meaning": "مکمل جانچ",
+    "example_en": "Thoroughness reduces errors.",
+    "example_ur": "مکمل جانچ غلطیوں کو کم کرتی ہے۔"
+  },
+  {
+    "word": "Tolerance",
+    "meaning": "برداشت",
+    "example_en": "Tolerance promotes harmony.",
+    "example_ur": "برداشت ہم آہنگی کو فروغ دیتی ہے۔"
+  },
+  {
+    "word": "Trust",
+    "meaning": "اعتماد",
+    "example_en": "Trust is earned over time.",
+    "example_ur": "اعتماد وقت کے ساتھ حاصل ہوتا ہے۔"
+  },
+  {
+    "word": "Understanding",
+    "meaning": "سمجھ",
+    "example_en": "Understanding prevents conflicts.",
+    "example_ur": "سمجھ تنازعات کو روکتی ہے۔"
+  },
+  {
+    "word": "Uniqueness",
+    "meaning": "انفرادیت",
+    "example_en": "Uniqueness makes a brand memorable.",
+    "example_ur": "انفرادیت ایک برانڈ کو یادگار بناتی ہے۔"
+  },
+  {
+    "word": "Value",
+    "meaning": "قدر",
+    "example_en": "Customers look for value.",
+    "example_ur": "گاہک قدر تلاش کرتے ہیں۔"
+  },
+  {
+    "word": "Versatility",
+    "meaning": "ہمہ جہتی صلاحیت",
+    "example_en": "Versatility increases career opportunities.",
+    "example_ur": "ہمہ جہتی صلاحیت کیریئر کے مواقع بڑھاتی ہے۔"
+  },
+  {
+    "word": "Vision",
+    "meaning": "بصیرت",
+    "example_en": "A strong vision guides a company.",
+    "example_ur": "مضبوط بصیرت کمپنی کی رہنمائی کرتی ہے۔"
+  },
+  {
+    "word": "Wealth",
+    "meaning": "دولت",
+    "example_en": "Wealth should be managed wisely.",
+    "example_ur": "دولت کو دانشمندی سے سنبھالنا چاہیے۔"
+  },
+  {
+    "word": "Wisdom",
+    "meaning": "دانائی",
+    "example_en": "Wisdom comes from experience.",
+    "example_ur": "دانائی تجربے سے آتی ہے۔"
+  },
+  {
+    "word": "Work ethic",
+    "meaning": "کام کی اخلاقیات",
+    "example_en": "A strong work ethic attracts opportunities.",
+    "example_ur": "مضبوط کام کی اخلاقیات مواقع کو اپنی طرف کھینچتی ہیں۔"
+  },
+  {
+    "word": "Accountability",
+    "meaning": "جوابدہی",
+    "example_en": "Accountability improves performance.",
+    "example_ur": "جوابدہی کارکردگی کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Adaptation",
+    "meaning": "موافقت",
+    "example_en": "Adaptation is necessary in changing markets.",
+    "example_ur": "بدلتی ہوئی مارکیٹ میں موافقت ضروری ہے۔"
+  },
+  {
+    "word": "Alertness",
+    "meaning": "چوکسی",
+    "example_en": "Alertness helps avoid mistakes.",
+    "example_ur": "چوکسی غلطیوں سے بچنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Assertiveness",
+    "meaning": "اعتماد کے ساتھ اظہار",
+    "example_en": "Assertiveness improves communication.",
+    "example_ur": "اعتماد کے ساتھ اظہار رابطے کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Authenticity",
+    "meaning": "اصلیت",
+    "example_en": "Authenticity builds credibility.",
+    "example_ur": "اصلیت اعتبار پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Availability",
+    "meaning": "دستیابی",
+    "example_en": "Product availability affects sales.",
+    "example_ur": "مصنوعات کی دستیابی فروخت پر اثر ڈالتی ہے۔"
+  },
+  {
+    "word": "Benchmark",
+    "meaning": "معیاری پیمانہ",
+    "example_en": "The benchmark helps measure progress.",
+    "example_ur": "معیاری پیمانہ ترقی کو ناپنے میں مدد دیتا ہے۔"
+  },
+  {
+    "word": "Competence",
+    "meaning": "اہلیت",
+    "example_en": "Competence increases trust.",
+    "example_ur": "اہلیت اعتماد بڑھاتی ہے۔"
+  },
+  {
+    "word": "Credibility",
+    "meaning": "اعتبار",
+    "example_en": "Credibility is important in business.",
+    "example_ur": "کاروبار میں اعتبار اہم ہوتا ہے۔"
+  },
+  {
+    "word": "Dependability",
+    "meaning": "قابلِ بھروسہ ہونا",
+    "example_en": "Dependability is valued by employers.",
+    "example_ur": "قابلِ بھروسہ ہونا آجر کے نزدیک اہم ہوتا ہے۔"
+  },
+  {
+    "word": "Diligence",
+    "meaning": "محنت و لگن",
+    "example_en": "Diligence leads to improvement.",
+    "example_ur": "محنت و لگن بہتری کی طرف لے جاتی ہے۔"
+  },
+  {
+    "word": "Diplomacy",
+    "meaning": "دانشمندانہ معاملہ فہمی",
+    "example_en": "Diplomacy helps resolve disputes.",
+    "example_ur": "دانشمندانہ معاملہ فہمی تنازعات حل کرنے میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Effectiveness",
+    "meaning": "موثریت",
+    "example_en": "Training improved effectiveness.",
+    "example_ur": "تربیت نے موثریت کو بہتر بنایا۔"
+  },
+  {
+    "word": "Empowerment",
+    "meaning": "اختیار دینا",
+    "example_en": "Empowerment motivates employees.",
+    "example_ur": "اختیار دینا ملازمین کی حوصلہ افزائی کرتا ہے۔"
+  },
+  {
+    "word": "Engagement",
+    "meaning": "شمولیت",
+    "example_en": "Employee engagement improves productivity.",
+    "example_ur": "ملازمین کی شمولیت پیداواری صلاحیت بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Entrepreneurship",
+    "meaning": "کاروباری صلاحیت",
+    "example_en": "Entrepreneurship creates opportunities.",
+    "example_ur": "کاروباری صلاحیت مواقع پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Evaluation",
+    "meaning": "جائزہ",
+    "example_en": "Regular evaluation improves performance.",
+    "example_ur": "باقاعدہ جائزہ کارکردگی بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Execution",
+    "meaning": "عمل درآمد",
+    "example_en": "Execution is more important than ideas.",
+    "example_ur": "عمل درآمد خیالات سے زیادہ اہم ہے۔"
+  },
+  {
+    "word": "Expertise",
+    "meaning": "تخصص",
+    "example_en": "Her expertise helped the company grow.",
+    "example_ur": "اس کی مہارت نے کمپنی کی ترقی میں مدد کی۔"
+  },
+  {
+    "word": "Facilitation",
+    "meaning": "آسانی پیدا کرنا",
+    "example_en": "Facilitation improves teamwork.",
+    "example_ur": "آسانی پیدا کرنا ٹیم ورک کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Fairness",
+    "meaning": "منصفانہ رویہ",
+    "example_en": "Fairness builds trust among employees.",
+    "example_ur": "منصفانہ رویہ ملازمین میں اعتماد پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Feasibility",
+    "meaning": "عملی امکان",
+    "example_en": "We studied the feasibility of the project.",
+    "example_ur": "ہم نے منصوبے کے عملی امکان کا جائزہ لیا۔"
+  },
+  {
+    "word": "Forecasting",
+    "meaning": "پیش گوئی",
+    "example_en": "Forecasting helps businesses plan ahead.",
+    "example_ur": "پیش گوئی کاروبار کو مستقبل کی منصوبہ بندی میں مدد دیتی ہے۔"
+  },
+  {
+    "word": "Framework",
+    "meaning": "بنیادی ڈھانچہ",
+    "example_en": "The framework guides the process.",
+    "example_ur": "بنیادی ڈھانچہ عمل کی رہنمائی کرتا ہے۔"
+  },
+  {
+    "word": "Fulfillment",
+    "meaning": "اطمینان",
+    "example_en": "Helping others brings fulfillment.",
+    "example_ur": "دوسروں کی مدد کرنا اطمینان لاتا ہے۔"
+  },
+  {
+    "word": "Governance",
+    "meaning": "انتظامی نظام",
+    "example_en": "Good governance improves efficiency.",
+    "example_ur": "اچھا انتظامی نظام کارکردگی بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Gratitude",
+    "meaning": "شکرگزاری",
+    "example_en": "Gratitude improves mental well-being.",
+    "example_ur": "شکرگزاری ذہنی سکون بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Harmony",
+    "meaning": "ہم آہنگی",
+    "example_en": "Harmony creates a positive environment.",
+    "example_ur": "ہم آہنگی مثبت ماحول پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Impact",
+    "meaning": "اثر",
+    "example_en": "Technology has a major impact on society.",
+    "example_ur": "ٹیکنالوجی کا معاشرے پر بڑا اثر ہوتا ہے۔"
+  },
+  {
+    "word": "Implementation",
+    "meaning": "نفاذ",
+    "example_en": "Implementation requires planning.",
+    "example_ur": "نفاذ کے لیے منصوبہ بندی ضروری ہے۔"
+  },
+  {
+    "word": "Improvisation",
+    "meaning": "فوری تدبیر",
+    "example_en": "Improvisation helped solve the issue.",
+    "example_ur": "فوری تدبیر نے مسئلہ حل کرنے میں مدد کی۔"
+  },
+  {
+    "word": "Inclusiveness",
+    "meaning": "شمولیت پسندی",
+    "example_en": "Inclusiveness strengthens communities.",
+    "example_ur": "شمولیت پسندی معاشروں کو مضبوط بناتی ہے۔"
+  },
+  {
+    "word": "Independence",
+    "meaning": "خودمختاری",
+    "example_en": "Financial independence brings confidence.",
+    "example_ur": "مالی خودمختاری اعتماد لاتی ہے۔"
+  },
+  {
+    "word": "Influential",
+    "meaning": "بااثر",
+    "example_en": "She is an influential leader.",
+    "example_ur": "وہ ایک بااثر رہنما ہے۔"
+  },
+  {
+    "word": "Initiation",
+    "meaning": "آغاز",
+    "example_en": "The initiation of the project was smooth.",
+    "example_ur": "منصوبے کا آغاز ہموار تھا۔"
+  },
+  {
+    "word": "Innovation-driven",
+    "meaning": "جدت پر مبنی",
+    "example_en": "The company is innovation-driven.",
+    "example_ur": "کمپنی جدت پر مبنی ہے۔"
+  },
+  {
+    "word": "Insightful",
+    "meaning": "بصیرت رکھنے والا",
+    "example_en": "His comments were insightful.",
+    "example_ur": "اس کے تبصرے بصیرت افروز تھے۔"
+  },
+  {
+    "word": "Inspiration-based",
+    "meaning": "ترغیب پر مبنی",
+    "example_en": "The campaign was inspiration-based.",
+    "example_ur": "یہ مہم ترغیب پر مبنی تھی۔"
+  },
+  {
+    "word": "Interpersonal",
+    "meaning": "باہمی تعلقات سے متعلق",
+    "example_en": "Interpersonal skills are important.",
+    "example_ur": "باہمی تعلقات کی مہارتیں اہم ہیں۔"
+  },
+  {
+    "word": "Judicious",
+    "meaning": "دانشمندانہ",
+    "example_en": "She made a judicious decision.",
+    "example_ur": "اس نے دانشمندانہ فیصلہ کیا۔"
+  },
+  {
+    "word": "Knowledgeable",
+    "meaning": "علم رکھنے والا",
+    "example_en": "He is knowledgeable about finance.",
+    "example_ur": "وہ مالیات کے بارے میں علم رکھتا ہے۔"
+  },
+  {
+    "word": "Leveraging",
+    "meaning": "بہتر استعمال",
+    "example_en": "Leveraging technology improves results.",
+    "example_ur": "ٹیکنالوجی کا بہتر استعمال نتائج بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Merit",
+    "meaning": "اہلیت",
+    "example_en": "Promotion should be based on merit.",
+    "example_ur": "ترقی اہلیت کی بنیاد پر ہونی چاہیے۔"
+  },
+  {
+    "word": "Methodology",
+    "meaning": "طریقۂ کار",
+    "example_en": "The methodology was easy to follow.",
+    "example_ur": "طریقۂ کار پر عمل کرنا آسان تھا۔"
+  },
+  {
+    "word": "Mindfulness",
+    "meaning": "ذہنی آگاہی",
+    "example_en": "Mindfulness reduces stress.",
+    "example_ur": "ذہنی آگاہی ذہنی دباؤ کم کرتی ہے۔"
+  },
+  {
+    "word": "Modernization",
+    "meaning": "جدید کاری",
+    "example_en": "Modernization improved efficiency.",
+    "example_ur": "جدید کاری نے کارکردگی بہتر بنائی۔"
+  },
+  {
+    "word": "Optimization",
+    "meaning": "بہتری لانا",
+    "example_en": "Optimization saves time and money.",
+    "example_ur": "بہتری لانا وقت اور پیسہ بچاتا ہے۔"
+  },
+  {
+    "word": "Originality",
+    "meaning": "جدتِ فکر",
+    "example_en": "Originality makes ideas valuable.",
+    "example_ur": "جدتِ فکر خیالات کو قیمتی بناتی ہے۔"
+  },
+  {
+    "word": "Partnership",
+    "meaning": "شراکت داری",
+    "example_en": "The partnership benefited both companies.",
+    "example_ur": "شراکت داری سے دونوں کمپنیوں کو فائدہ ہوا۔"
+  },
+  {
+    "word": "Perseverance",
+    "meaning": "ثابت قدمی",
+    "example_en": "Perseverance leads to achievement.",
+    "example_ur": "ثابت قدمی کامیابی تک لے جاتی ہے۔"
+  },
+  {
+    "word": "Predictability",
+    "meaning": "قابل پیش گوئی ہونا",
+    "example_en": "Predictability helps planning.",
+    "example_ur": "قابل پیش گوئی ہونا منصوبہ بندی میں مدد دیتا ہے۔"
+  },
+  {
+    "word": "Preparedness",
+    "meaning": "تیاری",
+    "example_en": "Preparedness reduces risks.",
+    "example_ur": "تیاری خطرات کم کرتی ہے۔"
+  },
+  {
+    "word": "Proactive",
+    "meaning": "پیش قدم",
+    "example_en": "A proactive approach prevents problems.",
+    "example_ur": "پیش قدم رویہ مسائل کو روک دیتا ہے۔"
+  },
+  {
+    "word": "Problem-solving",
+    "meaning": "مسئلہ حل کرنے کی صلاحیت",
+    "example_en": "Problem-solving is a valuable skill.",
+    "example_ur": "مسئلہ حل کرنے کی صلاحیت ایک قیمتی مہارت ہے۔"
+  },
+  {
+    "word": "Professional",
+    "meaning": "پیشہ ور",
+    "example_en": "She is a highly professional manager.",
+    "example_ur": "وہ ایک انتہائی پیشہ ور مینیجر ہے۔"
+  },
+  {
+    "word": "Proficiency",
+    "meaning": "مہارت",
+    "example_en": "Proficiency comes with practice.",
+    "example_ur": "مہارت مشق سے حاصل ہوتی ہے۔"
+  },
+  {
+    "word": "Reliance",
+    "meaning": "انحصار",
+    "example_en": "Too much reliance can be risky.",
+    "example_ur": "بہت زیادہ انحصار خطرناک ہو سکتا ہے۔"
+  },
+  {
+    "word": "Resolution",
+    "meaning": "حل",
+    "example_en": "The resolution satisfied everyone.",
+    "example_ur": "حل سے سب مطمئن تھے۔"
+  },
+  {
+    "word": "Retention",
+    "meaning": "برقرار رکھنا",
+    "example_en": "Employee retention saves costs.",
+    "example_ur": "ملازمین کو برقرار رکھنا اخراجات بچاتا ہے۔"
+  },
+  {
+    "word": "Revenue",
+    "meaning": "آمدنی",
+    "example_en": "The company increased its revenue.",
+    "example_ur": "کمپنی نے اپنی آمدنی بڑھائی۔"
+  },
+  {
+    "word": "Scalability",
+    "meaning": "وسعت پذیری",
+    "example_en": "Scalability is important for startups.",
+    "example_ur": "وسعت پذیری نئی کمپنیوں کے لیے اہم ہے۔"
+  },
+  {
+    "word": "Specialization",
+    "meaning": "تخصص",
+    "example_en": "Specialization increases expertise.",
+    "example_ur": "تخصص مہارت میں اضافہ کرتا ہے۔"
+  },
+  {
+    "word": "Strategic",
+    "meaning": "حکمت عملی پر مبنی",
+    "example_en": "Strategic thinking improves outcomes.",
+    "example_ur": "حکمت عملی پر مبنی سوچ نتائج بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Transparency",
+    "meaning": "شفافیت",
+    "example_en": "Transparency builds trust.",
+    "example_ur": "شفافیت اعتماد پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Transformation",
+    "meaning": "تبدیلی",
+    "example_en": "Digital transformation improved efficiency.",
+    "example_ur": "ڈیجیٹل تبدیلی نے کارکردگی بہتر بنائی۔"
+  },
+  {
+    "word": "Trustworthiness",
+    "meaning": "قابلِ اعتماد ہونا",
+    "example_en": "Trustworthiness is valued in leadership.",
+    "example_ur": "قیادت میں قابلِ اعتماد ہونا اہم سمجھا جاتا ہے۔"
+  },
+  {
+    "word": "Adaptable",
+    "meaning": "موافق ہونے والا",
+    "example_en": "Adaptable people handle change well.",
+    "example_ur": "موافق ہونے والے لوگ تبدیلی کو اچھی طرح سنبھالتے ہیں۔"
+  },
+  {
+    "word": "Analytical",
+    "meaning": "تجزیاتی",
+    "example_en": "An analytical mindset improves decisions.",
+    "example_ur": "تجزیاتی سوچ فیصلوں کو بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Articulate",
+    "meaning": "واضح اظہار کرنے والا",
+    "example_en": "She is articulate during meetings.",
+    "example_ur": "وہ اجلاسوں میں واضح اظہار کرتی ہے۔"
+  },
+  {
+    "word": "Attentive",
+    "meaning": "متوجہ",
+    "example_en": "Attentive employees make fewer mistakes.",
+    "example_ur": "متوجہ ملازمین کم غلطیاں کرتے ہیں۔"
+  },
+  {
+    "word": "Authentic",
+    "meaning": "حقیقی",
+    "example_en": "Authentic communication builds trust.",
+    "example_ur": "حقیقی رابطہ اعتماد پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Capable",
+    "meaning": "قابل",
+    "example_en": "She is capable of leading the team.",
+    "example_ur": "وہ ٹیم کی قیادت کرنے کی قابل ہے۔"
+  },
+  {
+    "word": "Collaborative",
+    "meaning": "تعاونی",
+    "example_en": "A collaborative culture improves teamwork.",
+    "example_ur": "تعاونی ماحول ٹیم ورک کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Competitive",
+    "meaning": "مسابقتی",
+    "example_en": "The market is highly competitive.",
+    "example_ur": "مارکیٹ انتہائی مسابقتی ہے۔"
+  },
+  {
+    "word": "Constructive",
+    "meaning": "مثبت اور مفید",
+    "example_en": "Constructive feedback improves performance.",
+    "example_ur": "مثبت اور مفید رائے کارکردگی بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Credible",
+    "meaning": "قابلِ اعتبار",
+    "example_en": "The source is credible.",
+    "example_ur": "یہ ذریعہ قابلِ اعتبار ہے۔"
+  },
+  {
+    "word": "Decisive",
+    "meaning": "فیصلہ کن",
+    "example_en": "A decisive leader acts quickly.",
+    "example_ur": "فیصلہ کن رہنما جلد عمل کرتا ہے۔"
+  },
+  {
+    "word": "Dependable",
+    "meaning": "قابلِ بھروسہ",
+    "example_en": "He is a dependable colleague.",
+    "example_ur": "وہ ایک قابلِ بھروسہ ساتھی ہے۔"
+  },
+  {
+    "word": "Diverse",
+    "meaning": "متنوع",
+    "example_en": "A diverse team generates better ideas.",
+    "example_ur": "متنوع ٹیم بہتر خیالات پیدا کرتی ہے۔"
+  },
+  {
+    "word": "Dynamic",
+    "meaning": "متحرک",
+    "example_en": "Technology is a dynamic field.",
+    "example_ur": "ٹیکنالوجی ایک متحرک شعبہ ہے۔"
+  },
+  {
+    "word": "Efficient",
+    "meaning": "موثر",
+    "example_en": "Efficient systems save time.",
+    "example_ur": "موثر نظام وقت بچاتے ہیں۔"
+  },
+  {
+    "word": "Empathetic",
+    "meaning": "ہمدرد",
+    "example_en": "Empathetic leaders understand people.",
+    "example_ur": "ہمدرد رہنما لوگوں کو سمجھتے ہیں۔"
+  },
+  {
+    "word": "Entrepreneurial",
+    "meaning": "کاروباری سوچ رکھنے والا",
+    "example_en": "She has an entrepreneurial mindset.",
+    "example_ur": "اس کی سوچ کاروباری ہے۔"
+  },
+  {
+    "word": "Ethical",
+    "meaning": "اخلاقی",
+    "example_en": "Ethical behavior builds reputation.",
+    "example_ur": "اخلاقی رویہ اچھی شہرت بناتا ہے۔"
+  },
+  {
+    "word": "Flexible",
+    "meaning": "لچکدار",
+    "example_en": "Flexible plans adapt to change.",
+    "example_ur": "لچکدار منصوبے تبدیلی کے مطابق ڈھل جاتے ہیں۔"
+  },
+  {
+    "word": "Focused",
+    "meaning": "یکسو",
+    "example_en": "Focused work increases productivity.",
+    "example_ur": "یکسو کام پیداواری صلاحیت بڑھاتا ہے۔"
+  },
+  {
+    "word": "Forward-thinking",
+    "meaning": "دور اندیش",
+    "example_en": "Forward-thinking companies embrace innovation.",
+    "example_ur": "دور اندیش کمپنیاں جدت کو اپناتی ہیں۔"
+  },
+  {
+    "word": "Innovative",
+    "meaning": "جدت پسند",
+    "example_en": "Innovative ideas create opportunities.",
+    "example_ur": "جدت پسند خیالات مواقع پیدا کرتے ہیں۔"
+  },
+  {
+    "word": "Insightful",
+    "meaning": "گہری سمجھ رکھنے والا",
+    "example_en": "Her analysis was insightful.",
+    "example_ur": "اس کا تجزیہ گہری سمجھ پر مبنی تھا۔"
+  },
+  {
+    "word": "Logical",
+    "meaning": "منطقی",
+    "example_en": "Logical thinking prevents errors.",
+    "example_ur": "منطقی سوچ غلطیوں سے بچاتی ہے۔"
+  },
+  {
+    "word": "Meticulous",
+    "meaning": "باریک بین",
+    "example_en": "Meticulous planning avoids problems.",
+    "example_ur": "باریک بین منصوبہ بندی مسائل سے بچاتی ہے۔"
+  },
+  {
+    "word": "Objective",
+    "meaning": "غیر جانبدار",
+    "example_en": "Objective analysis improves decisions.",
+    "example_ur": "غیر جانبدار تجزیہ فیصلوں کو بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Optimistic",
+    "meaning": "امید پرست",
+    "example_en": "Optimistic people stay motivated.",
+    "example_ur": "امید پرست لوگ متحرک رہتے ہیں۔"
+  },
+  {
+    "word": "Organized",
+    "meaning": "منظم",
+    "example_en": "Organized work saves effort.",
+    "example_ur": "منظم کام محنت بچاتا ہے۔"
+  },
+  {
+    "word": "Persistent",
+    "meaning": "استقامت رکھنے والا",
+    "example_en": "Persistent effort leads to success.",
+    "example_ur": "مسلسل کوشش کامیابی تک لے جاتی ہے۔"
+  },
+  {
+    "word": "Practical",
+    "meaning": "عملی",
+    "example_en": "Practical solutions are effective.",
+    "example_ur": "عملی حل مؤثر ہوتے ہیں۔"
+  },
+  {
+    "word": "Precise",
+    "meaning": "درست",
+    "example_en": "Precise instructions reduce confusion.",
+    "example_ur": "درست ہدایات الجھن کم کرتی ہیں۔"
+  },
+  {
+    "word": "Proficient",
+    "meaning": "ماہر",
+    "example_en": "He is proficient in English.",
+    "example_ur": "وہ انگریزی میں ماہر ہے۔"
+  },
+  {
+    "word": "Reliable",
+    "meaning": "قابلِ اعتماد",
+    "example_en": "Reliable information is essential.",
+    "example_ur": "قابلِ اعتماد معلومات ضروری ہیں۔"
+  },
+  {
+    "word": "Resilient",
+    "meaning": "مشکلات سے سنبھلنے والا",
+    "example_en": "Resilient people recover quickly.",
+    "example_ur": "مشکلات سے سنبھلنے والے لوگ جلد بحال ہو جاتے ہیں۔"
+  },
+  {
+    "word": "Resourceful",
+    "meaning": "وسائل کا بہترین استعمال کرنے والا",
+    "example_en": "Resourceful managers solve problems efficiently.",
+    "example_ur": "وسائل کا بہترین استعمال کرنے والے مینیجر مسائل مؤثر انداز میں حل کرتے ہیں۔"
+  },
+  {
+    "word": "Strategic",
+    "meaning": "حکمت عملی والا",
+    "example_en": "Strategic decisions shape the future.",
+    "example_ur": "حکمت عملی والے فیصلے مستقبل بناتے ہیں۔"
+  },
+  {
+    "word": "Supportive",
+    "meaning": "مددگار",
+    "example_en": "A supportive team improves morale.",
+    "example_ur": "مددگار ٹیم حوصلہ بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Transparent",
+    "meaning": "شفاف",
+    "example_en": "Transparent communication builds trust.",
+    "example_ur": "شفاف رابطہ اعتماد پیدا کرتا ہے۔"
+  },
+  {
+    "word": "Versatile",
+    "meaning": "ہمہ جہت",
+    "example_en": "Versatile employees are valuable.",
+    "example_ur": "ہمہ جہت ملازمین قیمتی ہوتے ہیں۔"
+  },
+  {
+    "word": "Visionary",
+    "meaning": "دور اندیش",
+    "example_en": "A visionary leader inspires innovation.",
+    "example_ur": "دور اندیش رہنما جدت کی ترغیب دیتا ہے۔"
+  },
+  {
+    "word": "Workforce",
+    "meaning": "افرادی قوت",
+    "example_en": "A skilled workforce drives growth.",
+    "example_ur": "ماہر افرادی قوت ترقی کو آگے بڑھاتی ہے۔"
+  },
+  {
+    "word": "Workflow",
+    "meaning": "کام کا بہاؤ",
+    "example_en": "A clear workflow improves efficiency.",
+    "example_ur": "واضح کام کا بہاؤ کارکردگی بہتر بناتا ہے۔"
+  },
+  {
+    "word": "Benchmarking",
+    "meaning": "معیاری موازنہ",
+    "example_en": "Benchmarking helps identify improvements.",
+    "example_ur": "معیاری موازنہ بہتری کی نشاندہی کرتا ہے۔"
+  },
+  {
+    "word": "Coordination",
+    "meaning": "ہم آہنگی",
+    "example_en": "Coordination is essential for success.",
+    "example_ur": "کامیابی کے لیے ہم آہنگی ضروری ہے۔"
+  },
+  {
+    "word": "Delegation",
+    "meaning": "اختیارات کی تقسیم",
+    "example_en": "Delegation improves team efficiency.",
+    "example_ur": "اختیارات کی تقسیم ٹیم کی کارکردگی بہتر بناتی ہے۔"
+  },
+  {
+    "word": "Engaging",
+    "meaning": "دلچسپ",
+    "example_en": "An engaging presentation attracts attention.",
+    "example_ur": "دلچسپ پریزنٹیشن توجہ حاصل کرتی ہے۔"
+  },
+  {
+    "word": "Prioritization",
+    "meaning": "ترجیحات کا تعین",
+    "example_en": "Prioritization helps manage time.",
+    "example_ur": "ترجیحات کا تعین وقت کو بہتر سنبھالنے میں مدد دیتا ہے۔"
+  },
+  {
+    "word": "Productive",
+    "meaning": "پیداوار کرنے والا",
+    "example_en": "A productive day feels rewarding.",
+    "example_ur": "پیداوار والا دن اطمینان بخشتا ہے۔"
+  }
+]
