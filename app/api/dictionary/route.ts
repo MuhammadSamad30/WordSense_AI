@@ -18,24 +18,38 @@ export async function GET(request: Request) {
   }
 
   try {
-    const prompt = `Act as a premium English-to-Urdu dictionary. Provide the following for the word "${word}":
-    1. Urdu meaning
-    2. One-line English example sentence
-    3. One-line Urdu translation of that example sentence.
+    const prompt = `Act as an advanced, premium English-to-Urdu dictionary. Provide a comprehensive definition for the word "${word}".
+    Ensure the Urdu translation is highly accurate and natural.
     
-    Respond STRICTLY in JSON format with the following keys:
+    Provide the following fields:
+    1. word: The searched word.
+    2. meaning: Exact Urdu meaning.
+    3. phonetic: IPA phonetic spelling (e.g., /tɒl.ər.əns/).
+    4. partOfSpeech: The part of speech (Noun, Verb, Adjective, etc.).
+    5. definition: A clear, easy-to-understand English definition.
+    6. example_en: A one-line English example sentence.
+    7. example_ur: A one-line natural Urdu translation of that example sentence.
+    8. synonyms: An array of up to 4 synonyms.
+    9. antonyms: An array of up to 4 antonyms.
+    
+    Respond STRICTLY in JSON format matching this schema:
     {
       "word": "${word}",
-      "meaning": "Urdu meaning here",
-      "example_en": "English example here",
-      "example_ur": "Urdu translation here"
+      "meaning": "Urdu meaning",
+      "phonetic": "phonetic spelling",
+      "partOfSpeech": "part of speech",
+      "definition": "English definition",
+      "example_en": "English example",
+      "example_ur": "Urdu translation",
+      "synonyms": ["synonym1", "synonym2"],
+      "antonyms": ["antonym1", "antonym2"]
     }`;
 
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       messages: [{ role: "user", content: prompt }],
       response_format: { type: "json_object" },
-      temperature: 0.5,
+      temperature: 0.3,
     });
 
     const content = response.choices[0].message.content;

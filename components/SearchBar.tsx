@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Search, X } from 'lucide-react';
+import { Search, X, Loader2, Sparkles } from 'lucide-react';
 import Fuse from 'fuse.js';
 import wordsData from '@/app/Words/words.json';
 import { WordEntry } from '@/types';
@@ -12,7 +12,7 @@ interface SearchBarProps {
   isLoading?: boolean;
 }
 
-export default function SearchBar({ onSearch }: SearchBarProps) {
+export default function SearchBar({ onSearch, isLoading }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState<WordEntry[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -28,7 +28,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
 
   useEffect(() => {
     if (query.length > 1 && fuseRef.current) {
-      const results = fuseRef.current.search(query).map(r => r.item).slice(0, 5);
+      const results = fuseRef.current.search(query).map(r => r.item).slice(0, 6);
       setSuggestions(results);
       setShowSuggestions(true);
     } else {
@@ -52,26 +52,30 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto">
+    <div className="relative w-full">
       <form onSubmit={handleSubmit} className="relative group">
-        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-          <Search className="h-5 w-5 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
+        <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none z-10">
+          {isLoading ? (
+            <Loader2 className="h-6 w-6 text-blue-500 animate-spin" />
+          ) : (
+            <Search className="h-6 w-6 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
+          )}
         </div>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for an English word..."
-          className="block w-full pl-12 pr-12 py-4 bg-white border border-slate-200 rounded-2xl shadow-sm focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all outline-none text-lg"
+          placeholder="Enter any English word..."
+          className="block w-full pl-14 pr-14 py-5 bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 rounded-[2rem] shadow-xl focus:ring-8 focus:ring-blue-500/10 focus:border-blue-500 transition-all outline-none text-xl font-medium dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
           autoComplete="off"
         />
         {query && (
           <button
             type="button"
             onClick={() => setQuery('')}
-            className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600"
+            className="absolute inset-y-0 right-0 pr-5 flex items-center text-slate-400 hover:text-rose-500 transition-colors z-10"
           >
-            <X size={20} />
+            <X size={24} />
           </button>
         )}
       </form>
@@ -79,25 +83,34 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
       <AnimatePresence>
         {showSuggestions && suggestions.length > 0 && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="absolute z-10 w-full mt-2 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden"
+            initial={{ opacity: 0, y: 10, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.98 }}
+            className="absolute z-50 w-full mt-4 bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 rounded-[2rem] shadow-2xl overflow-hidden backdrop-blur-xl"
           >
-            {suggestions.map((item, index) => (
-              <button
-                key={index}
-                onClick={() => handleSuggestionClick(item.word)}
-                className="w-full px-6 py-3 text-left hover:bg-slate-50 flex justify-between items-center transition-colors group"
-              >
-                <span className="font-medium text-slate-700 group-hover:text-blue-600">
-                  {item.word}
-                </span>
-                <span className="text-slate-400 font-noto-urdu text-sm" dir="rtl">
-                  {item.meaning}
-                </span>
-              </button>
-            ))}
+            <div className="p-2">
+              <div className="px-4 py-2 flex items-center gap-2 text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+                <Sparkles size={12} />
+                <span>Quick Suggestions</span>
+              </div>
+              {suggestions.map((item, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleSuggestionClick(item.word)}
+                  className="w-full px-5 py-4 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 flex justify-between items-center transition-all duration-200 group rounded-2xl"
+                >
+                  <div className="flex flex-col">
+                    <span className="font-bold text-slate-700 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 text-lg">
+                      {item.word}
+                    </span>
+                    <span className="text-xs text-slate-400 dark:text-slate-500 font-medium italic">Dictionary Match</span>
+                  </div>
+                  <span className="text-2xl font-noto-urdu text-slate-400 dark:text-slate-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors" dir="rtl">
+                    {item.meaning}
+                  </span>
+                </button>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
