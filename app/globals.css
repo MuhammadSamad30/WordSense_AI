@@ -37,7 +37,7 @@ body {
   }
 }
 
-.urdu-font {
+.urdu-font, .font-noto-urdu {
   font-family: var(--font-noto-urdu);
 }
 

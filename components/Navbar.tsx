@@ -20,9 +20,9 @@ export default function Navbar() {
               <Home size={18} />
               <span>Home</span>
             </Link>
-            <Link href="/dictionary" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2">
+            <Link href="/words-bank" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2">
               <Book size={18} />
-              <span>Dictionary</span>
+              <span>Words Bank</span>
             </Link>
             <Link href="/about" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2">
               <Info size={18} />
