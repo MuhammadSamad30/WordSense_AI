@@ -19,6 +19,21 @@ WordSense AI is a complete, production-ready, globally deployable Next.js web ap
 
 ---
 
+## 📖 Word Lookup Workflow (Built-in + AI Fallback)
+
+To ensure that the meaning of every English word is available and no word is ever missed, WordSense AI implements a dual-layer lookup system:
+
+1. **Built-in Words Database (`data/words.json`)**: 
+   - When a user searches for an English word, the app first checks the local pre-stored words bank (case-insensitively). 
+   - If a match is found, the definition is served instantly from the built-in JSON file, bypassing any external API calls to optimize speed, reliability, and cost.
+
+2. **Dynamic AI Fallback (OpenAI API)**:
+   - If the searched word is **not** present in the built-in database, the app automatically calls OpenAI's `gpt-3.5-turbo` via the server-side API (`/api/meaning`).
+   - This guarantees that **every single English word** can be defined and translated to Urdu, ensuring 100% coverage.
+   - Successful AI responses are cached for 24 hours to prevent duplicate requests.
+
+---
+
 ## 🛠️ Tech Stack
 
 *   **Core**: Next.js 14+ (App Router), TypeScript, React 19

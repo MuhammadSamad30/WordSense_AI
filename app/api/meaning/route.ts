@@ -4,7 +4,8 @@ import { z } from 'zod';
 import globalCache from '@/lib/cache';
 import globalRateLimiter from '@/lib/rateLimiter';
 import logger from '@/lib/logger';
-import { SearchResult } from '@/types';
+import { SearchResult, WordEntry } from '@/types';
+import wordsData from '@/data/words.json';
 
 // Zod validation schema for query parameters
 const querySchema = z.object({
@@ -52,7 +53,23 @@ export async function GET(request: Request) {
 
   const word = validation.data.word.trim().toLowerCase();
 
-  // 4. Check LRU cache (Map with 24-hour expiry)
+  // 4. Check if the word is in the built-in words list
+  const localMatch = (wordsData as WordEntry[]).find(
+    (item) => item.word.toLowerCase() === word
+  );
+
+  if (localMatch) {
+    logger.info('Built-in dictionary hit', { ip, word });
+    return NextResponse.json({
+      word: localMatch.word, // Preserve original casing or matching word
+      meaning: localMatch.meaning,
+      example_en: localMatch.example_en,
+      example_ur: localMatch.example_ur,
+      isAiGenerated: false,
+    });
+  }
+
+  // 5. Check LRU cache (Map with 24-hour expiry)
   const cachedResult = globalCache.get(word);
   if (cachedResult) {
     logger.info('Cache hit', { ip, word });

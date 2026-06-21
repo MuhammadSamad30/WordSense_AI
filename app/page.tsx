@@ -7,8 +7,9 @@ import SkeletonCard from '@/components/SkeletonCard';
 import RecentSearches from '@/components/RecentSearches';
 import { SearchResult, WordEntry } from '@/types';
 import wordsData from '@/data/words.json';
-import { Zap, Brain, Globe, Sparkles } from 'react-icons/fi';
-import { BookOpen } from 'react-icons/fi';
+import { FiZap, FiGlobe, FiBookOpen } from 'react-icons/fi';
+import { GiBrain } from 'react-icons/gi';
+import { HiOutlineSparkles } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Toaster, toast } from 'react-hot-toast';
 
@@ -122,7 +123,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md text-blue-600 dark:text-blue-400 text-sm font-bold border border-blue-100/50 dark:border-blue-900/20 shadow-sm"
         >
-          <Zap size={16} className="fill-current text-amber-500 animate-pulse" />
+          <FiZap size={16} className="fill-current text-amber-500 animate-pulse" />
           <span className="uppercase tracking-wider">Next-Gen AI Dictionary</span>
         </motion.div>
         
@@ -153,15 +154,15 @@ export default function Home() {
           className="flex flex-wrap justify-center gap-4 text-slate-450 dark:text-slate-500 font-bold text-xs uppercase tracking-wider pt-4"
         >
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200/50 dark:border-slate-800 bg-white/30 dark:bg-slate-900/30 backdrop-blur-sm">
-            <Brain size={14} className="text-blue-500" />
+            <GiBrain size={14} className="text-blue-500" />
             <span>Smart Context</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200/50 dark:border-slate-800 bg-white/30 dark:bg-slate-900/30 backdrop-blur-sm">
-            <Globe size={14} className="text-indigo-500" />
+            <FiGlobe size={14} className="text-indigo-500" />
             <span>Native Urdu</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200/50 dark:border-slate-800 bg-white/30 dark:bg-slate-900/30 backdrop-blur-sm">
-            <Sparkles size={14} className="text-amber-505" />
+            <HiOutlineSparkles size={14} className="text-amber-505" />
             <span>AI Verified</span>
           </div>
         </motion.div>
@@ -198,7 +199,7 @@ export default function Home() {
               className="p-10 bg-rose-50 dark:bg-rose-950/20 border border-rose-100 dark:border-rose-900/30 rounded-[2.5rem] text-center space-y-4 shadow-xl"
             >
               <div className="mx-auto w-16 h-16 bg-rose-100 dark:bg-rose-900/30 rounded-full flex items-center justify-center text-rose-600 dark:text-rose-450 mb-2">
-                 <Zap size={32} />
+                 <FiZap size={32} />
               </div>
               <div className="space-y-2">
                 <p className="text-rose-605 dark:text-rose-400 font-black text-2xl uppercase tracking-wider">Search Failed</p>
@@ -232,7 +233,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               className="text-center py-20 grayscale opacity-30 dark:opacity-20"
             >
-              <BookOpen size={100} className="mx-auto text-slate-400 mb-8" />
+              <FiBookOpen size={100} className="mx-auto text-slate-400 mb-8" />
               <div className="space-y-2">
                 <p className="text-3xl font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em]">Ready to explore</p>
                 <p className="text-slate-400 dark:text-slate-500 font-medium">Type any word or click &quot;Random Word&quot; above to search</p>
