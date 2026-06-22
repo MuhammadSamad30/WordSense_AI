@@ -15,8 +15,8 @@ export default function Footer() {
           <p className="text-slate-400 dark:text-slate-600 text-xs font-bold uppercase tracking-widest">
             Developed with Excellence
           </p>
-          <p className="text-slate-500 dark:text-slate-500 text-sm">
-            © {new Date().getFullYear()} WordSense AI. Powered by GPT-4o.
+          <p className="text-slate-500 dark:text-slate-500 text-sm font-medium">
+            © {new Date().getFullYear()} WordSense AI. Developed by Muhammad Samad!
           </p>
         </div>
       </div>

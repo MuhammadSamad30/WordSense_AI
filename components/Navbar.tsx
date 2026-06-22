@@ -31,8 +31,19 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
 
-          <div className="sm:hidden flex items-center space-x-4">
-             <ThemeToggle />
+          <div className="sm:hidden flex items-center space-x-2">
+            <Link href="/" title="Home" className="p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Home size={20} />
+            </Link>
+            <Link href="/words-bank" title="Words Bank" className="p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Book size={20} />
+            </Link>
+            <Link href="/about" title="About" className="p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Info size={20} />
+            </Link>
+            <div className="pl-1">
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </div>
