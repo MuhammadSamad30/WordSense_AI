@@ -66,12 +66,6 @@ export function useSpeech() {
     setSpeakingText(null);
     if (!text) return;
 
-    // Check if we have a native system Urdu voice
-    const hasSystemUrduVoice = voices.some((v) => 
-      v.lang.toLowerCase().startsWith('ur') || 
-      v.lang.toLowerCase().includes('urdu')
-    );
-
     // Fallback synthesis function using Web Speech API
     const speakViaSynthesis = () => {
       if (!window.speechSynthesis) return;
@@ -116,12 +110,13 @@ export function useSpeech() {
       window.speechSynthesis.speak(utterance);
     };
 
-    // Use Google Translate TTS for Urdu if no native Urdu voice is present
-    if (lang === 'ur-PK' && !hasSystemUrduVoice) {
+    // Use Google Translate TTS ALWAYS for Urdu to guarantee high-quality voice playback
+    if (lang === 'ur-PK') {
       if (audioRef.current) {
         // Use translate_tts endpoint which is highly reliable for Urdu pronunciation
         const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ur&client=tw-ob&q=${encodeURIComponent(text)}`;
         audioRef.current.src = url;
+        audioRef.current.load(); // Reset buffer state
         
         audioRef.current.onplay = () => {
           setSpeakingText(text);
@@ -132,13 +127,13 @@ export function useSpeech() {
         };
         
         audioRef.current.onended = handleAudioEnd;
-        audioRef.current.onerror = () => {
-          // If network fails, try system voice anyway
+        audioRef.current.onerror = (e) => {
+          console.warn("Audio playback failed, trying synthesis", e);
           speakViaSynthesis();
         };
 
         audioRef.current.play().catch((err) => {
-          console.error("Audio playback failed, trying synthesis", err);
+          console.warn("Audio playback failed, trying synthesis", err);
           speakViaSynthesis();
         });
       } else {

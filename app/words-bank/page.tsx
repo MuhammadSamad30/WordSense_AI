@@ -53,7 +53,7 @@ export default function WordsBankPage() {
   const { groups, sortedKeys } = groupedWords;
 
   return (
-    <div className="relative flex-1 max-w-7xl mx-auto px-4 py-12 w-full overflow-hidden">
+    <div className="relative flex-1 max-w-7xl mx-auto px-4 py-12 w-full">
       
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full -z-10 pointer-events-none">
@@ -73,7 +73,7 @@ export default function WordsBankPage() {
             <span>Built-in Words Bank</span>
           </motion.div>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
-            Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-650 dark:from-blue-400 dark:to-indigo-400">Vocabulary</span>
+            Core <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-650 dark:from-blue-450 dark:to-indigo-400">Vocabulary</span>
           </h1>
           <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base max-w-xl">
             Explore our curated selection of <span className="font-extrabold text-blue-600 dark:text-blue-400">{wordsData.length} essential words</span>, organized alphabetically.
@@ -81,7 +81,7 @@ export default function WordsBankPage() {
         </div>
 
         {/* Client-Side Search Filter & View Switcher */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto z-10">
           {/* Search filter input */}
           <div className="relative flex-1 sm:w-72 group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
@@ -97,7 +97,7 @@ export default function WordsBankPage() {
           </div>
 
           {/* Grid / List Switcher */}
-          <div className="flex items-center bg-slate-105 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/40 dark:border-slate-700/40 shadow-inner self-end sm:self-auto">
+          <div className="flex items-center bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/40 dark:border-slate-700/40 shadow-inner self-end sm:self-auto">
             <button
               onClick={() => setViewMode('grid')}
               title="Grid View"
@@ -124,21 +124,23 @@ export default function WordsBankPage() {
         </div>
       </div>
 
-      {/* Sticky Alphabet Navigation Quick Jumps (Redesigned) */}
+      {/* Sticky Alphabet Navigation Quick Jumps */}
       {sortedKeys.length > 0 && (
-        <div className="sticky top-[4.5rem] z-30 w-full mb-8 relative">
+        <div className="sticky top-[4.5rem] z-30 w-full mb-8 relative max-w-full">
           <div 
-            className="w-full py-3 px-4 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl shadow-md overflow-x-auto scrollbar-none flex items-center justify-start md:justify-center gap-2"
-            style={{ scrollbarWidth: 'none' }}
+            className="w-full py-3 px-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl shadow-md flex items-center justify-start md:justify-center gap-3 overflow-hidden"
           >
             {/* Quick Jump Label */}
-            <div className="flex-shrink-0 flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-extrabold pr-3 border-r border-slate-200 dark:border-slate-805 mr-1 select-none">
+            <div className="shrink-0 flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-extrabold pr-3 border-r border-slate-200 dark:border-slate-800 mr-1 select-none">
               <Sparkles size={11} className="text-blue-500 animate-pulse" />
               <span>Quick Jump</span>
             </div>
 
-            {/* Alphabet Pills */}
-            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+            {/* Alphabet Pills - Only this sub-div scrolls horizontally */}
+            <div 
+              className="flex items-center gap-1.5 overflow-x-auto scrollbar-none max-w-full py-1 pr-2" 
+              style={{ scrollbarWidth: 'none' }}
+            >
               {sortedKeys.map((letter) => (
                 <button
                   key={letter}
@@ -157,7 +159,7 @@ export default function WordsBankPage() {
                       });
                     }
                   }}
-                  className="w-8 h-8 flex-shrink-0 flex items-center justify-center text-xs font-black rounded-lg bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-650 dark:hover:from-blue-500 dark:hover:to-indigo-500 active:scale-95 transition-all shadow-sm border border-slate-100 dark:border-slate-700/40 cursor-pointer"
+                  className="w-8 h-8 shrink-0 flex items-center justify-center text-xs font-black rounded-lg bg-slate-50 dark:bg-slate-805 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-linear-to-r hover:from-blue-600 hover:to-indigo-650 dark:hover:from-blue-500 dark:hover:to-indigo-500 active:scale-95 transition-all shadow-sm border border-slate-100 dark:border-slate-700/40 cursor-pointer"
                 >
                   {letter}
                 </button>
@@ -165,13 +167,13 @@ export default function WordsBankPage() {
             </div>
           </div>
           
-          {/* Subtle horizontal gradient overlays for mobile indicators */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 w-8 h-full bg-gradient-to-r from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
-          <div className="absolute top-1/2 -translate-y-1/2 right-0 w-8 h-full bg-gradient-to-l from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
+          {/* Subtle horizontal gradient overlays for visual scrolling feedback on mobile */}
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 w-8 h-full bg-linear-to-r from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
+          <div className="absolute top-1/2 -translate-y-1/2 right-0 w-8 h-full bg-linear-to-l from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
         </div>
       )}
 
-      {/* Grid or List list Grouped by Alphabet */}
+      {/* Grid or List Grouped by Alphabet */}
       <div className="space-y-10 relative z-10">
         {sortedKeys.map((letter) => (
           <div key={letter} id={`section-${letter}`} className="scroll-mt-48 space-y-4">
@@ -180,7 +182,7 @@ export default function WordsBankPage() {
               <h2 className="text-xl font-bold text-slate-850 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-xl border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
                 {letter}
               </h2>
-              <div className="h-[1px] flex-1 bg-gradient-to-r from-slate-205 to-transparent dark:from-slate-800/60 dark:to-transparent" />
+              <div className="h-px flex-1 bg-linear-to-r from-slate-200 to-transparent dark:from-slate-800/60 dark:to-transparent" />
               <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
                 {groups[letter].length} {groups[letter].length === 1 ? 'Word' : 'Words'}
               </span>
