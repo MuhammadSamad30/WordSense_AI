@@ -4,13 +4,14 @@ import { useState, useMemo } from 'react';
 import wordsData from '@/data/words.json';
 import { WordEntry } from '@/types';
 import { HiOutlineSearch } from 'react-icons/hi';
-import { FiBookOpen } from 'react-icons/fi';
+import { FiBookOpen, FiGrid, FiList } from 'react-icons/fi';
 import { Sparkles } from 'lucide-react';
 import WordsCard from '@/components/WordsCard';
 import { motion } from 'framer-motion';
 
 export default function WordsBankPage() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   // 1. Filter words based on the search query
   const filteredWords = useMemo(() => {
@@ -75,73 +76,123 @@ export default function WordsBankPage() {
             Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-650 dark:from-blue-400 dark:to-indigo-400">Vocabulary</span>
           </h1>
           <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base max-w-xl">
-            Explore our curated selection of <span className="font-extrabold text-blue-600 dark:text-blue-400">{wordsData.length} essential words</span>, organized alphabetically for quick access.
+            Explore our curated selection of <span className="font-extrabold text-blue-600 dark:text-blue-400">{wordsData.length} essential words</span>, organized alphabetically.
           </p>
         </div>
 
-        {/* Client-Side Search Filter */}
-        <div className="relative w-full lg:w-96 group">
-          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
-            <HiOutlineSearch className="h-5 w-5 text-slate-400 dark:text-slate-500 group-focus-within:text-blue-500 transition-colors" />
+        {/* Client-Side Search Filter & View Switcher */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
+          {/* Search filter input */}
+          <div className="relative flex-1 sm:w-72 group">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
+              <HiOutlineSearch className="h-5 w-5 text-slate-400 dark:text-slate-500 group-focus-within:text-blue-500 transition-colors" />
+            </div>
+            <input
+              type="text"
+              placeholder="Filter words or meanings..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="block w-full pl-11 pr-4 py-2.5 bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 rounded-xl shadow-md focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all text-sm font-semibold dark:text-white"
+            />
           </div>
-          <input
-            type="text"
-            placeholder="Filter words or meanings..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="block w-full pl-12 pr-4 py-3 bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 rounded-xl shadow-md focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all text-sm font-semibold dark:text-white"
-          />
+
+          {/* Grid / List Switcher */}
+          <div className="flex items-center bg-slate-105 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/40 dark:border-slate-700/40 shadow-inner self-end sm:self-auto">
+            <button
+              onClick={() => setViewMode('grid')}
+              title="Grid View"
+              className={`p-2 rounded-lg transition-all cursor-pointer ${
+                viewMode === 'grid'
+                  ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm'
+                  : 'text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+              }`}
+            >
+              <FiGrid size={18} />
+            </button>
+            <button
+              onClick={() => setViewMode('list')}
+              title="List View"
+              className={`p-2 rounded-lg transition-all cursor-pointer ${
+                viewMode === 'list'
+                  ? 'bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm'
+                  : 'text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+              }`}
+            >
+              <FiList size={18} />
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Sticky Alphabet Navigation Quick Jumps */}
+      {/* Sticky Alphabet Navigation Quick Jumps (Redesigned) */}
       {sortedKeys.length > 0 && (
-        <div className="sticky top-[4.1rem] z-30 w-full py-3 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-200/40 dark:border-slate-800/40 mb-8 overflow-x-auto scrollbar-hide flex gap-1.5">
-          {sortedKeys.map((letter) => (
-            <button
-              key={letter}
-              onClick={() => {
-                const element = document.getElementById(`section-${letter}`);
-                if (element) {
-                  const offset = 180; // Offset for sticky navbar + subheader
-                  const bodyRect = document.body.getBoundingClientRect().top;
-                  const elementRect = element.getBoundingClientRect().top;
-                  const elementPosition = elementRect - bodyRect;
-                  const offsetPosition = elementPosition - offset;
-                  
-                  window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                  });
-                }
-              }}
-              className="px-3 py-1 text-xs sm:text-sm font-bold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all rounded-lg border border-slate-200 dark:border-slate-800 shadow-sm flex-shrink-0 cursor-pointer"
-            >
-              {letter}
-            </button>
-          ))}
+        <div className="sticky top-[4.5rem] z-30 w-full mb-8 relative">
+          <div 
+            className="w-full py-3 px-4 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 rounded-2xl shadow-md overflow-x-auto scrollbar-none flex items-center justify-start md:justify-center gap-2"
+            style={{ scrollbarWidth: 'none' }}
+          >
+            {/* Quick Jump Label */}
+            <div className="flex-shrink-0 flex items-center gap-1 text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-extrabold pr-3 border-r border-slate-200 dark:border-slate-805 mr-1 select-none">
+              <Sparkles size={11} className="text-blue-500 animate-pulse" />
+              <span>Quick Jump</span>
+            </div>
+
+            {/* Alphabet Pills */}
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+              {sortedKeys.map((letter) => (
+                <button
+                  key={letter}
+                  onClick={() => {
+                    const element = document.getElementById(`section-${letter}`);
+                    if (element) {
+                      const offset = 180; // Offset for sticky navbar + subheader
+                      const bodyRect = document.body.getBoundingClientRect().top;
+                      const elementRect = element.getBoundingClientRect().top;
+                      const elementPosition = elementRect - bodyRect;
+                      const offsetPosition = elementPosition - offset;
+                      
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
+                  className="w-8 h-8 flex-shrink-0 flex items-center justify-center text-xs font-black rounded-lg bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-650 dark:hover:from-blue-500 dark:hover:to-indigo-500 active:scale-95 transition-all shadow-sm border border-slate-100 dark:border-slate-700/40 cursor-pointer"
+                >
+                  {letter}
+                </button>
+              ))}
+            </div>
+          </div>
+          
+          {/* Subtle horizontal gradient overlays for mobile indicators */}
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 w-8 h-full bg-gradient-to-r from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
+          <div className="absolute top-1/2 -translate-y-1/2 right-0 w-8 h-full bg-gradient-to-l from-slate-50/50 to-transparent dark:from-slate-950/50 pointer-events-none md:hidden" />
         </div>
       )}
 
-      {/* Grid of Word Cards Grouped by Alphabet */}
+      {/* Grid or List list Grouped by Alphabet */}
       <div className="space-y-10 relative z-10">
         {sortedKeys.map((letter) => (
           <div key={letter} id={`section-${letter}`} className="scroll-mt-48 space-y-4">
             {/* Section Header */}
             <div className="flex items-center gap-3">
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-xl border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
+              <h2 className="text-xl font-bold text-slate-850 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-xl border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
                 {letter}
               </h2>
-              <div className="h-[1px] flex-1 bg-gradient-to-r from-slate-200 to-transparent dark:from-slate-800/60 dark:to-transparent" />
+              <div className="h-[1px] flex-1 bg-gradient-to-r from-slate-205 to-transparent dark:from-slate-800/60 dark:to-transparent" />
               <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
                 {groups[letter].length} {groups[letter].length === 1 ? 'Word' : 'Words'}
               </span>
             </div>
             
-            {/* Grid of Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {/* List or Grid Container */}
+            <div className={viewMode === 'grid'
+              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+              : "flex flex-col gap-3.5"
+            }>
               {groups[letter].map((entry) => (
-                <WordsCard key={entry.word} entry={entry} />
+                <WordsCard key={entry.word} entry={entry} viewMode={viewMode} />
               ))}
             </div>
           </div>
